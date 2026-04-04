@@ -1,8 +1,6 @@
-# Not a Part of libttak – TTL Cache Bench Examples
-
-이 디렉토리는 libttak의 메모리 최적화 연구와는 무관하며, 리포지터리를 읽는 사람들이 `ttl_cache_bench.c`와 `ttl_cache_bench_lockfree.c`에서 사용하는 알고리즘의 개념을 이해할 수 있도록 참고용 예제 코드를 담고 있다. 코드는 Go, Python 3, C++17로 작성된 **잠금 기반(locked)** TTL 캐시 벤치마크와 **락-프리(lock-free)** TTL 캐시 벤치마크를 각각 흉내 내며, libttak의 API를 사용하지 않는다.
-
 ## 파일 구성
+
+코드는 Go, Python 3, C++17로 작성된 **잠금 기반(locked)** TTL 캐시 벤치마크와 **락-프리(lock-free)** TTL 캐시 벤치마크를 각각 흉내낸다.
 
 - `go_locked_ttl_bench.go` – 샤드별 뮤텍스를 사용하는 Go TTL 캐시 벤치마크
 - `go_lockfree_ttl_bench.go` – `atomic.Pointer` 기반의 Go 락-프리 TTL 캐시 벤치마크
