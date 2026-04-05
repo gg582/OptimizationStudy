@@ -116,7 +116,7 @@ def run_comparison():
 
     col_titles = [
         "Choi Original\n(Reverse Siamese Pairing)",
-        "Reverse-Siamese Reinterpretation\n(Gradient-Aware)",
+        "Reinterpretation\n(Gradient-Aware)",
     ]
     return history, checkpoints, col_titles
 
@@ -135,7 +135,7 @@ def gather_complexity_records(n=FIELD_SIZE):
             "Notes": "Choi's original manuscript maintains mirrored pairs for relief.",
         },
         {
-            "Algorithm": "Reverse-Siamese Reinterpretation",
+            "Algorithm": "Reinterpretation",
             "Siamese Direction": "Forward (interpreted)",
             "Dominant Ops": "Gradient sensing + adaptive flip",
             "Time Complexity": per_step,
@@ -201,7 +201,7 @@ def visualize_comparison():
         "Congestion Level (0.0 to 1.0)"
     )
     plt.suptitle(
-        "Choi Original vs. Reverse-Siamese Reinterpretation (Order-64)",
+        "Choi Original vs. Reinterpretation (Order-64)",
         fontweight="bold",
         fontsize=7,
         y=0.998,
