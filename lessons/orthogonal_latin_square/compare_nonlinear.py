@@ -96,7 +96,6 @@ def visualize_comparison():
     cbar_ax = fig.add_axes([0.3, 0.04, 0.4, 0.01])
     fig.colorbar(im, cax=cbar_ax, orientation='horizontal').set_label('Saturation Density')
     
-    plt.suptitle("Blind vs. Directional Nonlinear Control (T=10,000)", fontsize=16, y=0.98)
     plt.subplots_adjust(hspace=0.3, wspace=0.1, bottom=0.08, top=0.94)
     plt.show()
 
